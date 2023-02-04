@@ -1,0 +1,19 @@
+version: '4.1'
+services:
+  app:
+    image: docker.io/library/fmlyclient                                                                    
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: fmly-client
+    ports:
+      - "3000:3000"
+    volumes:
+      - fmlyclient:/app
+volumes:
+  fmlyclient:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+  

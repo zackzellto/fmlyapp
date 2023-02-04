@@ -1,0 +1,40 @@
+version: '4.1'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  fmly-api:
+    image: docker.io/library/fmlyapi:latest  
+    depends_on:
+      - fmly_db
+    container_name: fmlyapi-services
+    ports:
+      - 8088:80
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Host=fmly_db;Port=5432;Database=fmly-main-db; IntegratedSecurity=true;Pooling=true;;
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - dev
+
+  fmly_db:
+    image: postgres:latest
+    container_name: fmly-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres      
+      - POSTGRES_DB=fmly-main-db
+    ports:
+      - 5433:5432
+    restart: always
+    volumes:
+      - fmly_db_data:/var/lib/postgresql/data
+    networks:
+      - dev
+
+volumes:
+  fmly_db_data:

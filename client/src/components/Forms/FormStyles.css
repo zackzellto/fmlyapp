@@ -1,0 +1,21 @@
+.forgot-pw-link{
+    bottom: 20px;
+    color: black;
+    position: relative;
+}
+
+.need-an-account-question{
+    position: relative;
+    color: black;
+    right: 60px;
+    top: 240px;
+}
+
+.register-account-link{
+    left: 90px;
+    top: 116px;
+    width: 100px;
+    color: black;
+    top: 220px;
+    position: relative;
+}
