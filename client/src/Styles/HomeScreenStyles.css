@@ -1,23 +1,15 @@
-.title{
+@media screen and (max-width: 768px) {
+  .title{
     font-size: 3rem;
     font-weight: 600;
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     position: relative;
     top: 20px;
     text-align: start;
     max-width: fit-content;
-  }
-  
-  .iPhone-mockup{
-    width: 60%;
-    max-width: 400px;
-    height: auto;
-    margin: 0;
-    position: relative;
-    padding: 0;
   }
 
   .fmly-title{
@@ -30,6 +22,11 @@
     width: 100%;
     color: #21F3CE;
     max-width: fit-content;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iPhone-mockup{
+    display: none;
   }
 
   .homepage-info-pitch{
@@ -41,18 +38,26 @@
     padding: 0;
     position: relative;
     text-align: start;
+    
   }
 
   .homepage-download-info-text{
-    font-size: 2.5rem;    
+    font-size: 1rem;    
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #000000;
     position: relative;
-    max-width: fit-content;
+  }
+
+  .demo-button{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
     margin: 0;
     padding: 0;
-    text-align: start;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .QR-code{
@@ -62,6 +67,16 @@
     margin: 0;
     padding: 0;
     position: relative;
+    margin-top: 30px;
+  }
+
+  .QR-code-text{
+    font-size: 1rem;    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    margin-top: 20px;
   }
 
   .play-store-button{
@@ -70,7 +85,10 @@
     height: auto;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
+    margin-left: 20px;
     position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .app-store-button{
@@ -80,4 +98,119 @@
     margin: 0;
     padding: 0;
     position: relative;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+
+@media screen and (min-width: 768px) {
+  .title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    position: relative;
+    top: 20px;
+    text-align: start;
+    max-width: fit-content;
+  }
+
+  .fmly-title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Paytone One', sans-serif;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #21F3CE;
+    max-width: fit-content;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iPhone-mockup{
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+  }
+
+  .homepage-info-pitch{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #000000;
+    max-width: fit-content;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: start;
+    
+  }
+
+  .homepage-download-info-text{
+    font-size: 1rem;    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+  }
+
+  .demo-button{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .QR-code{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .QR-code-text{
+    font-size: 1rem;    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .play-store-button{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .app-store-button{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
