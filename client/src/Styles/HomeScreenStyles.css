@@ -1,22 +1,21 @@
 .title{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #000000;
     margin: 0;
     padding: 0;
     margin-bottom: 100px;
     position: relative;
-    top: 100px;
+    top: 20px;
     text-align: start;
     max-width: fit-content;
   }
   
   .iPhone-mockup{
     width: 60%;
+    max-width: 400px;
     height: auto;
     margin: 0;
-    left: 100px;
     position: relative;
     padding: 0;
   }
@@ -35,7 +34,6 @@
 
   .homepage-info-pitch{
     font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #000000;
     max-width: fit-content;
@@ -46,10 +44,9 @@
   }
 
   .homepage-download-info-text{
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem;    
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     color: #000000;
     position: relative;
     max-width: fit-content;
@@ -59,10 +56,28 @@
   }
 
   .QR-code{
-    width: 50%;
+    width: 40%;
+    max-width: 200px;
     height: auto;
     margin: 0;
     padding: 0;
     position: relative;
-    left: 100px;
+  }
+
+  .play-store-button{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .app-store-button{
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
   }
