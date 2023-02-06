@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { List, ListItem, ListItemText, Typography } from "@material-ui/core";
 import { Box, Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import iPhoneMockup from "../components/Images/iPhoneMockup.png";
@@ -7,6 +7,7 @@ import QRCode from ".././assets/qrcode-download-app.svg";
 import AppStoreButton from ".././assets/ios-download-button.svg";
 import PlayStoreButton from ".././assets/android-download-button.svg";
 import styled from "styled-components";
+import FreePricingModel from "../components/Cards/PricingStructureFree";
 
 type Props = {};
 
@@ -76,6 +77,11 @@ const Home = (props: Props) => {
               alt="Play Store Button"
             />
           </a>
+        </Grid>
+        <hr className="homepage-hr" />
+        <Grid container spacing={6}>
+          <FreePricingModel />
+          {/* <PaidPricingModel /> */}
         </Grid>
       </Container>
     </>

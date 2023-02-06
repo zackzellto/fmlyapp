@@ -1,4 +1,10 @@
 @media screen and (max-width: 768px) {
+
+  i{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .title{
     font-size: 3rem;
     font-weight: 600;
@@ -101,9 +107,19 @@
     margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  .homepage-hr{
+    width: 80%;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+
+  i{
+    margin-left: 10px;
+  }
+
   .title{
     font-size: 3rem;
     font-weight: 600;
@@ -212,5 +228,11 @@
     position: relative;
     margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .homepage-hr{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
 }
