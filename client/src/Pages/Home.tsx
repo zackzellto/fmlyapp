@@ -48,7 +48,7 @@ const Home = (props: Props) => {
           <Typography className="homepage-info-pitch">
             Our app makes family management much more efficient. Communicate,
             manage tasks, and always have peace of mind with location sharing,
-            all in one platform.
+            and much more, all in one platform.
           </Typography>
           <br />
           <DemoButton className="demo-button">Try our Demo</DemoButton>

@@ -1,22 +1,31 @@
 .pricing-box-free{
-    width: 80%;
-    height: 300px;
+    width: 320px;
+    height: auto;
     margin: auto;
-    padding: 2;
     margin-top: 30px;
     position: relative;
-    color: #21F3CE;
     box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.25);
   }
+
 
   .pricing-box-title{
     font-size: 2rem;
     font-weight: 600;
-    color: #21F3CE;
-    margin: 0;
-    padding: 2;
+    margin: auto;
     position: relative;
-    margin-bottom: 30px;
+    font-family: 'Paytone One', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #21F3CE;
+    color: #000000;
+  }
+
+  .pricing-box-container{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    position: relative;
+    background-color: #21F3CE;
   }
 
   .pricing-box-text{
@@ -24,6 +33,39 @@
     font-weight: 400;
     color: #000000;
     margin: 0;
+
     padding: 2;
     position: relative;
+  }
+
+  .fmly-text{
+    position: relative;
+    float: right;
+    font-size: 1.5rem;
+    color: #21F3CE;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .fmly-board{
+    font-size: 1.5rem;
+    color: #6a7a66;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .fmly-text-details{
+    font-size: 1.2rem;
+    color: #21F3CE;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .fmly-board-details{
+    font-size: 1.2rem;
+    color: #6a7a66;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .fmly-accordion-detail{
+    font-size: 1rem;
+    color: #21F3CE;
+    font-family: 'Paytone One', sans-serif;
   }

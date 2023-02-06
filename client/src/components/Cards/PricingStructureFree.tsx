@@ -4,7 +4,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Card, TextField } from "@material-ui/core";
+import { Card, Grid } from "@material-ui/core";
 import "../../Styles/PricingStructureStyles.css";
 
 const FreePricingModel = () => {
@@ -17,7 +17,19 @@ const FreePricingModel = () => {
 
   return (
     <Card className="pricing-box-free">
-      <div className="pricing-box-title">Free</div>
+      <Typography
+        className="pricing-box-title"
+        sx={{
+          fontFamily: "Paytone One, sans-serif",
+          color: "#FFFFFF",
+          fontSize: "2.5rem",
+          fontWeight: "bold",
+          mb: 2,
+        }}
+      >
+        Free
+      </Typography>
+
       <div className="pricing-box-text">
         <Accordion
           expanded={expanded === "panel1"}
@@ -28,16 +40,16 @@ const FreePricingModel = () => {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
-              <i className="fas fa-users"></i>
-            </Typography>
-            <TextField>fmlyboard</TextField>
+            <i className="fas fa-users"></i>
+            <div className="fmly-text">fmly</div>
+            <div className="fmly-board">board</div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
-            </Typography>
+            <div className="fmly-text-details">fmly</div>
+            <div className="fmly-board-details">board</div>
+            <div className="fmly-accordion-detail">
+              is the central hub for your family.
+            </div>
           </AccordionDetails>
         </Accordion>
         <Accordion
