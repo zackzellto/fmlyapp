@@ -24,12 +24,12 @@ const FreePricingModel = () => {
           color: "#FFFFFF",
           fontSize: "2.5rem",
           fontWeight: "bold",
-          mb: 2,
+          backgroundColor: "#21f3ce",
+          textShadow: "0px 5px 5px rgba(0, 0, 0, 0.25)",
         }}
       >
         Free
       </Typography>
-
       <div className="pricing-box-text">
         <Accordion
           expanded={expanded === "panel1"}
@@ -40,7 +40,7 @@ const FreePricingModel = () => {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <i className="fas fa-users"></i>
+            <i className="fas fa-users accordion-icon"></i>
             <div className="fmly-text">fmly</div>
             <div className="fmly-board">board</div>
           </AccordionSummary>
