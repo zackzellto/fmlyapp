@@ -46,19 +46,34 @@ const Home = (props: Props) => {
           </h1>
           <br />
         </Grid>
-        <Grid>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          fontSize={20}
+          sx={{
+            fontFamily: "Poppins, sans-serif",
+            width: "90%",
+            fontSize: "20px",
+          }}
+        >
           <Typography className="homepage-info-pitch">
-            Our app makes family management much more efficient. Communicate,
-            manage tasks, and always have peace of mind with location sharing,
-            and much more, all in one platform.
+            <h3>
+              Our app makes family management much more efficient. Communicate,
+              manage tasks, and always have peace of mind with location sharing,
+              and much more, all in one platform.
+            </h3>
           </Typography>
           <br />
-          <DemoButton className="demo-button">Try our Demo</DemoButton>
         </Grid>
+        <DemoButton className="demo-button">Try our Demo</DemoButton>
         <Grid>
           <img className="iPhone-mockup" srcSet={iPhoneMockup} alt="iPhone" />
           <Typography className="homepage-download-info-text">
-            Download now and experience stress-free household coordination!
+            <strong>
+              Download now and experience stress-free household coordination!
+            </strong>
           </Typography>
         </Grid>
         <img className="QR-code" srcSet={QRCode} alt="QR Code" />
@@ -81,6 +96,9 @@ const Home = (props: Props) => {
           </a>
         </Grid>
         <hr className="homepage-hr" />
+        <Grid>
+          <strong className="pricing-options-text">Pricing Options</strong>
+        </Grid>
         <Grid container spacing={6}>
           <FreePricingModel />
           <PremiumPricingModel />

@@ -3,6 +3,8 @@
     height: auto;
     margin: auto;
     position: relative;
+    margin-bottom: 35px;
+    margin-top: 55px;
   }
 
 .pricing-box-subscribe{
@@ -10,6 +12,8 @@
     height: auto;
     margin: auto;
     position: relative;
+    margin-bottom: 35px;
+ 
   }
 
 .pricing-box-upgrade{
@@ -17,6 +21,7 @@
     height: auto;
     margin: auto;
     position: relative;
+    margin-bottom: 35px;
   }
 
   .pricing-box-text-free{

@@ -6,20 +6,20 @@
   }
 
   .title{
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: 600;
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 100px; 
     position: relative;
-    top: 20px;
+    top: 80px;
     text-align: start;
     max-width: fit-content;
   }
 
   .fmly-title{
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     font-weight: 600;
     font-family: 'Paytone One', sans-serif;
     height: auto;
@@ -36,7 +36,8 @@
   }
 
   .homepage-info-pitch{
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #000000;
     max-width: fit-content;
@@ -44,6 +45,7 @@
     padding: 0;
     position: relative;
     text-align: start;
+    text-indent: 15px;
     
   }
 
@@ -110,7 +112,22 @@
 
   .homepage-hr{
     width: 80%;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #848f8dad;
+    color: #21F3CE;
+  }
+
+  .pricing-options-text{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #888181;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: start;
+    max-width: fit-content;
   }
 }
 
@@ -231,7 +248,21 @@
 
   .homepage-hr{
     width: 80%;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #848f8dad;
+    color: #21F3CE;
+  }
+
+  .pricing-options-text{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #888181;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: start;
+    max-width: fit-content;
   }
 }
