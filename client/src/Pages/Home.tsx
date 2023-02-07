@@ -8,6 +8,8 @@ import AppStoreButton from ".././assets/ios-download-button.svg";
 import PlayStoreButton from ".././assets/android-download-button.svg";
 import styled from "styled-components";
 import FreePricingModel from "../components/Cards/PricingStructureFree";
+import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
+import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
 
 type Props = {};
 
@@ -81,8 +83,10 @@ const Home = (props: Props) => {
         <hr className="homepage-hr" />
         <Grid container spacing={6}>
           <FreePricingModel />
-          {/* <PaidPricingModel /> */}
+          <PremiumPricingModel />
+          <SubscriptionPricingModel />
         </Grid>
+        <hr className="homepage-hr" />
       </Container>
     </>
   );

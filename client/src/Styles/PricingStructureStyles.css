@@ -3,15 +3,48 @@
     height: auto;
     margin: auto;
     position: relative;
-    background-color: #21F3CE;
   }
 
-  .pricing-box-text{
+.pricing-box-subscribe{
+    width: 320px;
+    height: auto;
+    margin: auto;
+    position: relative;
+  }
+
+.pricing-box-upgrade{
+    width: 320px;
+    height: auto;
+    margin: auto;
+    position: relative;
+  }
+
+  .pricing-box-text-free{
     font-size: 1.5rem;
     font-weight: 400;
     color: #000000;
     margin: 0;
     background-color: #21F3CE;
+    padding: 2;
+    position: relative;
+  }
+
+  .pricing-box-text-upgrade{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    background-color: #F850F1;
+    padding: 2;
+    position: relative;
+  }
+
+  .pricing-box-text-subscribe{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    background-color: #6C6AEF;
     padding: 2;
     position: relative;
   }

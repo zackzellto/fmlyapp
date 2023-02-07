@@ -7,7 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Card, Grid } from "@material-ui/core";
 import "../../Styles/PricingStructureStyles.css";
 
-const FreePricingModel = () => {
+const SubscriptionPricingModel = () => {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange =
@@ -16,7 +16,7 @@ const FreePricingModel = () => {
     };
 
   return (
-    <Card className="pricing-box-free">
+    <Card className="pricing-box-subscribe">
       <Typography
         className="pricing-box-title"
         sx={{
@@ -25,13 +25,13 @@ const FreePricingModel = () => {
           fontSize: "2.5rem",
           fontWeight: "bold",
           padding: ".5rem",
-          backgroundColor: "#21f3ce",
+          backgroundColor: "#6C6AEF",
           textShadow: "0px 5px 5px rgba(0, 0, 0, 0.25)",
         }}
       >
-        Free
+        Subscribe
       </Typography>
-      <div className="pricing-box-text-free">
+      <div className="pricing-box-text-subscribe">
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
@@ -123,4 +123,4 @@ const FreePricingModel = () => {
   );
 };
 
-export default FreePricingModel;
+export default SubscriptionPricingModel;
