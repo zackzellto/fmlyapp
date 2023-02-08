@@ -11,9 +11,9 @@
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 100px; 
+    margin-bottom: 20px; 
     position: relative;
-    top: 80px;
+    top: 90px;
     text-align: start;
     max-width: fit-content;
   }
@@ -35,18 +35,30 @@
     display: none;
   }
 
-  .homepage-info-pitch{
-    font-size: 1.5rem;
+  .dev-update-text{
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
-    max-width: fit-content;
-    margin: 0;
+    max-width: 100%;
+    line-height: normal;
+    position: relative;
+    text-align: start;
+    top: 100px;
+    
+  }
+
+
+  .homepage-info-pitch{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    max-width: 100%;
+    line-height: normal;
+    text-indent: 15px;
     padding: 0;
     position: relative;
     text-align: start;
-    text-indent: 15px;
-    
+    top: 100px;
   }
 
   .homepage-download-info-text{
@@ -55,6 +67,7 @@
     font-weight: 700;
     color: #000000;
     position: relative;
+
   }
 
   .demo-button{
@@ -65,11 +78,26 @@
     padding: 0;
     position: relative;
     margin-bottom: 30px;
+    margin-top: 30px;
+    bottom: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
+  .interest-signup-input{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    bottom: 100px;
+  }
+  
+
   .QR-code{
-    width: 40%;
+    width: 50%;
     max-width: 200px;
     height: auto;
     margin: 0;
@@ -116,6 +144,7 @@
     margin-bottom: 40px;
     border: 1px solid #848f8dad;
     color: #21F3CE;
+    margin-bottom: 100px;
   }
 
   .pricing-options-text{
@@ -138,20 +167,21 @@
   }
 
   .title{
-    font-size: 3rem;
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
     position: relative;
-    top: 20px;
+    top: 150px;
+    left: 50px;
     text-align: start;
     max-width: fit-content;
   }
 
   .fmly-title{
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-weight: 600;
     font-family: 'Paytone One', sans-serif;
     margin: 0;
@@ -164,25 +194,30 @@
 
   .iPhone-mockup{
     width: 40%;
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
     margin: 0;
     padding: 0;
     position: relative;
     top: 20px;
-    margin-left: 20px;
+    float: right;
+    margin-bottom: 30px;
+    
+
   }
 
   .homepage-info-pitch{
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #000000;
-    max-width: fit-content;
-    margin: 0;
+    max-width: 50%;
+    line-height: normal;
+    text-indent: 15px;
     padding: 0;
     position: relative;
     text-align: start;
-    
+    top: 150px;
+    left: 50px;
   }
 
   .homepage-download-info-text{
@@ -199,7 +234,22 @@
     height: auto;
     margin: 0;
     padding: 0;
+    bottom: 70px;
     position: relative;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .interest-signup-input{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 70px;
+    margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -232,6 +282,7 @@
     margin-top: 20px;
     margin-left: 20px;
     position: relative;
+    margin-bottom: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -242,16 +293,18 @@
     margin: 0;
     padding: 0;
     position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .homepage-hr{
     width: 80%;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     border: 1px solid #848f8dad;
     color: #21F3CE;
+    
   }
 
   .pricing-options-text{
@@ -265,4 +318,5 @@
     text-align: start;
     max-width: fit-content;
   }
+
 }
