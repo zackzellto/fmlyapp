@@ -16,6 +16,7 @@ import styled from "styled-components";
 import FreePricingModel from "../components/Cards/PricingStructureFree";
 import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
+import AppBarWeb from "../components/AppBar/WebAppBar";
 
 type Props = {};
 
@@ -45,8 +46,8 @@ const DemoButton = styled.button`
 const Home = (props: Props) => {
   return (
     <>
+      <AppBarWeb />
       <Container className="home-container" maxWidth="xl">
-        {" "}
         <h1 className="title">
           Get organized with <text className="fmly-title">fmly</text>!
         </h1>
@@ -57,10 +58,6 @@ const Home = (props: Props) => {
         </h3>
         <br />
         <img className="iPhone-mockup" srcSet={iPhoneMockup} alt="iPhone" />
-        <h5 className="dev-update-text">
-          We're currently in development, but you can join our waitlist to be
-          notified when we launch!
-        </h5>
         <Grid
           sx={{
             marginTop: "250px",

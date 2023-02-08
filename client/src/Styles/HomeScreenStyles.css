@@ -228,6 +228,17 @@
     position: relative;
   }
 
+  .dev-update-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    max-width: 100%;
+    line-height: normal;
+    position: relative;
+    text-align: start;
+    
+  }
+
   .demo-button{
     width: 40%;
     max-width: 200px;

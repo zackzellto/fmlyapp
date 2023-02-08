@@ -11,6 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import DevUpdateScrollEffect from "./DevUpdateScrollEffect";
 
 function AppBarWeb() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -62,7 +63,7 @@ function AppBarWeb() {
               textDecoration: "none",
             }}
           >
-            fmly
+            <DevUpdateScrollEffect />
           </Typography>
         </Toolbar>
       </Container>
