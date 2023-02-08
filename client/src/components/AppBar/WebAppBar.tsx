@@ -47,26 +47,7 @@ function AppBarWeb() {
         zIndex: 1,
       }}
     >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Paytone One, sans-serif",
-              fontWeight: 700,
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            <DevUpdateScrollEffect />
-          </Typography>
-        </Toolbar>
-      </Container>
+      <DevUpdateScrollEffect />
     </AppBar>
   );
 }

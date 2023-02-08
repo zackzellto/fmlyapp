@@ -202,8 +202,19 @@
     top: 20px;
     float: right;
     margin-bottom: 30px;
-    
+    animation: float 6s ease-in-out infinite;
+  }
 
+  @keyframes float {
+    0% {
+      transform: translatey(0);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0);
+    }
   }
 
   .homepage-info-pitch{
