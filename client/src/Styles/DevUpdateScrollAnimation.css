@@ -29,3 +29,21 @@
     position: relative;
     text-align: center;
 }
+
+.dev-update-bar{
+    width: 100%;
+    height: fit-content;
+    background-color: #21F3CE;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .marquee{
+        position: relative;
+        bottom: 100px;
+    }
+  }
+    

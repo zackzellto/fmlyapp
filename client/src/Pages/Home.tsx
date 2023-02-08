@@ -17,6 +17,7 @@ import FreePricingModel from "../components/Cards/PricingStructureFree";
 import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
 import AppBarWeb from "../components/AppBar/WebAppBar";
+import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
 
 type Props = {};
 
@@ -46,7 +47,7 @@ const DemoButton = styled.button`
 const Home = (props: Props) => {
   return (
     <>
-      <AppBarWeb />
+      <DevUpdateScrollEffect />
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
           Get organized with <text className="fmly-title">fmly</text>!
