@@ -13,5 +13,6 @@ namespace fmly.Data
         }
 
         public DbSet<fmly.Models.User> Users { get; set; }
+        public DbSet<fmly.Models.WaitlistSignup> WaitlistSignups { get; set; }
     }
 }
