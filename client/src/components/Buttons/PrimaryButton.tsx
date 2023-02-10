@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 type Props = {
   text: string;
   onSubmit?: () => void;
+  onClick?: () => void;
 };
 
 export const PrimaryButton = (props: Props) => {

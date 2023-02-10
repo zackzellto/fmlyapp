@@ -1,4 +1,5 @@
 import {
+  FormControl,
   List,
   ListItem,
   ListItemText,
@@ -18,19 +19,24 @@ import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
 import AppBarWeb from "../components/AppBar/WebAppBar";
 import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
+import axios from "axios";
+import React from "react";
+import { useState } from "react";
+import { WaitlistSignupForm } from "../components/Forms/Waitlist/WaitlistSignupForm";
 
 type Props = {};
 
-const DemoButton = styled.button`
+const WaitlistButton = styled.button`
   background: #21f3ce;
-  border-radius: 2.5px;
+  border-radius: 5px;
   border: none;
   color: #000000;
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-size: 17px;
   height: 56px;
-  width: 250px;
+  width: 240px;
+  bottom: 70px;
   position: relative;
   text-transform: none;
   z-index: 1;
@@ -44,13 +50,17 @@ const DemoButton = styled.button`
   }
 `;
 
+type FormData = {
+  email: string;
+};
+
 const Home = (props: Props) => {
   return (
     <>
       <DevUpdateScrollEffect />
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
-          Get organized with <text className="fmly-title">fmly</text>!
+          Get organized with <span className="fmly-title">fmly</span>!
         </h1>
         <h3 className="homepage-info-pitch">
           fmly makes family management much more efficient. Communicate, manage
@@ -64,25 +74,17 @@ const Home = (props: Props) => {
             marginTop: "250px",
           }}
         >
-          <TextField
-            id="outlined-basic"
-            variant="outlined"
-            className="interest-signup-input"
-            label="Enter email"
-          />
-          <DemoButton disabled className="demo-button">
-            Join Waitlist!
-          </DemoButton>
+          <WaitlistSignupForm />
           <Grid>
-            <text className="homepage-download-info-text">
+            <span className="homepage-download-info-text">
               When we launch, we'll send you an email with a link to download,
               or just come back here and check!
-            </text>
+            </span>
           </Grid>
           <Grid>
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
           </Grid>
-          <text className="QR-code-text"> (Scan to download) </text>
+          <span className="QR-code-text"> (Scan to download) </span>
           <Grid>
             <a href="">
               <img

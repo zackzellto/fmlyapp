@@ -26,5 +26,11 @@ namespace server.Controllers
             _context.SaveChanges();
             return waitlistSignup;
         }
+
+        [HttpGet(Name = "WaitlistSignups")]
+        public IEnumerable<WaitlistSignup> Get()
+        {
+            return _context.WaitlistSignups.ToList();
+        }
     }
 }
