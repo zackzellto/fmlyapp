@@ -45,7 +45,7 @@ export const LoginForm = () => {
 
   const handleLogin = () => {
     axios
-      .post("http://localhost:5000/auth/users/login", {
+      .post("http://localhost:8088/Users", {
         email: email,
         password: password,
       })
@@ -61,7 +61,7 @@ export const LoginForm = () => {
   const handleEmailChange = async (e: any) => {
     setEmail(e.target.value);
     await axios
-      .get("http://localhost:5000/api/users/email/" + e.target.value)
+      .get("http://localhost:8088/Users" + e.target.value)
       .then((res) => {
         console.log(res);
       })
@@ -75,7 +75,7 @@ export const LoginForm = () => {
   const handlePasswordChange = async (e: any) => {
     setPassword(e.target.value);
     await axios
-      .get("http://localhost:5000/api/users/password/" + e.target.value)
+      .get("http://localhost:8088/Users" + e.target.value)
       .then((res) => {
         console.log(res);
       })
@@ -83,14 +83,6 @@ export const LoginForm = () => {
         console.log(err);
       });
     setPasswordError(e.target.value.length < 8);
-  };
-
-  const registerAccountLink = () => {
-    <Link to="/register">Register</Link>;
-  };
-
-  const forgotPasswordLink = () => {
-    <Link to="/forgot-password">Forgot Password</Link>;
   };
 
   return (
@@ -147,17 +139,15 @@ export const LoginForm = () => {
           />
         </div>
       </form>
-      <a className="forgot-pw-link" onClick={forgotPasswordLink}>
-        <h5>
-          <u style={{ textDecorationColor: "#10D8C0" }}>Forgot Password?</u>
-        </h5>
-      </a>
+      <Link className="forgot-pw-link" to="/forgot-password">
+        <h5 style={{ textDecorationColor: "#21F3CE" }}> Forgot Password?</h5>
+      </Link>
+
       <h5 className="need-an-account-question">Need an account?</h5>
-      <a className="register-account-link" onClick={registerAccountLink}>
-        <h5>
-          <u style={{ textDecorationColor: "#10D8C0" }}>Register</u>
-        </h5>
-      </a>
+      <Link className="register-account-link" to="/register">
+        <h5> Register</h5>
+      </Link>
+
       <FacebookLoginButton />
       <LoginButton handleLogin={handleLogin}>Login</LoginButton>
     </Grid>

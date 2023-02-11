@@ -4,11 +4,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { PrimaryButton } from "../../Buttons/PrimaryButton";
 import "../FormStyles.css";
 import { Grid } from "@material-ui/core";
 import { KeyboardDatePicker } from "@material-ui/pickers";
+import "../../../Styles/RegistrationScreenStyles.css";
+import MainLogo from "../../Logos/MainLogo";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,30 +51,31 @@ export const UserRegistrationForm = () => {
     return re.test(String(email).toLowerCase());
   };
 
-  const handleSubmit = () => {
-    axios
-      .post("http://localhost:8088/users", {
-        profilePicture: profilePicture,
-        firstName: firstName,
-        lastName: lastName,
-        birthday: birthday,
-        email: email,
-        password: password,
-      })
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  const handleSubmit = async (e: any) => {
+    if (validateEmail(email)) {
+      e.preventDefault();
+      await axios
+        .post("http://localhost:8088/WaitlistSignup", {
+          profilePicture,
+          firstName,
+          lastName,
+          birthday,
+          email,
+          password,
+        })
+        .then((res) => {
+          console.log(res);
+        });
+    }
   };
 
   return (
     <div className="form-container">
-      <h1 className="form-title">Create an account</h1>
+      <MainLogo />
       <form className={classes.root} noValidate autoComplete="off">
         <div>
           <IconButton
+            className="profile-pic"
             aria-label="account of current user"
             aria-controls="menu-appbar"
             aria-haspopup="true"
@@ -194,7 +197,6 @@ export const UserRegistrationForm = () => {
             password !== "" &&
             confirmPassword !== ""
           ) {
-            handleSubmit();
           }
         }}
       />
