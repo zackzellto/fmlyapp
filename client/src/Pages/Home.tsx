@@ -57,10 +57,10 @@ type FormData = {
 const Home = (props: Props) => {
   return (
     <>
-      <DevUpdateScrollEffect />
+      {/* <DevUpdateScrollEffect /> */}
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
-          Get organized with <span className="fmly-title">fmly</span>!
+          Get organized, with <span className="fmly-title">fmly</span>!
         </h1>
         <h3 className="homepage-info-pitch">
           fmly makes family management much more efficient. Communicate, manage

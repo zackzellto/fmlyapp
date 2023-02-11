@@ -2,6 +2,8 @@
   text-align: center;
   place-items: center;
   min-width: 100vw;
+  max-width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
 }

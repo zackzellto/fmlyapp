@@ -7,17 +7,15 @@ type Props = {};
 const DevUpdateScrollEffect = (props: Props) => {
   return (
     <>
-      <Grid container>
-        <div className="dev-update-bar">
-          <text className="marquee">
-            <span className="dev-update-text">
-              <text className="dev-update">Development Update: </text>
-              fmly is being developed by one developer at the moment. I will
-              provide updates consistantly about the state of the application!
-            </span>
-          </text>
+      <div className="dev-update-container">
+        <div className="dev-update-bar marquee">
+          <span className="dev-update-text">
+            <strong>Developer Update:</strong> We are currently working on a new
+            feature that will allow you to create your own custom playlists.
+            Stay tuned for more updates!
+          </span>
         </div>
-      </Grid>
+      </div>
     </>
   );
 };

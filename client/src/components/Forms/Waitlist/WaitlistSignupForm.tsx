@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Axios from "axios";
+import { validateEmail } from "../FormValidationChecker";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,19 +18,32 @@ export const WaitlistSignupForm = () => {
   const classes = useStyles();
   const [email, setEmail] = useState("");
 
+  const checkEmail = () => {
+    if (validateEmail(email)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    await Axios.post("http://localhost:8088/WaitlistSignup", { email }).then(
-      (res) => {
-        console.log(res);
-      }
-    );
+    if (checkEmail()) {
+      e.preventDefault();
+      await Axios.post("http://localhost:8088/WaitlistSignup", { email }).then(
+        (res) => {
+          console.log(res);
+        }
+      );
+    } else {
+      alert("Please enter a valid email address");
+    }
   };
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <div>
         <TextField
+          className="interest-signup-input"
           id="outlined-email-input"
           label="Email"
           type="email"
@@ -37,8 +51,23 @@ export const WaitlistSignupForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <Button variant="contained" color="primary" onClick={handleSubmit}>
-          Submit
+        <Button
+          style={{
+            backgroundColor: "#21f3ce",
+            fontFamily: "Poppins",
+            fontWeight: 700,
+            fontSize: 17,
+            height: 56,
+            width: 240,
+            bottom: 70,
+            position: "relative",
+            textTransform: "none",
+            zIndex: 1,
+          }}
+          className="demo-button"
+          onClick={handleSubmit}
+        >
+          Join Waitlist!
         </Button>
       </div>
     </form>
