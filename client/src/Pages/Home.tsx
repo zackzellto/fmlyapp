@@ -1,63 +1,22 @@
-import {
-  FormControl,
-  List,
-  ListItem,
-  ListItemText,
-  TextField,
-  Typography,
-} from "@material-ui/core";
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import iPhoneMockup from "../components/Images/iPhoneMockup.png";
 import "../Styles/HomeScreenStyles.css";
 import QRCode from ".././assets/qrcode-download-app.svg";
 import AppStoreButton from ".././assets/ios-download-button.svg";
 import PlayStoreButton from ".././assets/android-download-button.svg";
-import styled from "styled-components";
 import FreePricingModel from "../components/Cards/PricingStructureFree";
 import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
-import AppBarWeb from "../components/AppBar/WebAppBar";
 import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
-import axios from "axios";
-import React from "react";
-import { useState } from "react";
 import { WaitlistSignupForm } from "../components/Forms/Waitlist/WaitlistSignupForm";
 
 type Props = {};
 
-const WaitlistButton = styled.button`
-  background: #21f3ce;
-  border-radius: 5px;
-  border: none;
-  color: #000000;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  height: 56px;
-  width: 240px;
-  bottom: 70px;
-  position: relative;
-  text-transform: none;
-  z-index: 1;
-  &:hover {
-    background: #10d8c0;
-    color: #000000;
-  }
-  &:active {
-    background: #10d8c0;
-    color: #000000;
-  }
-`;
-
-type FormData = {
-  email: string;
-};
-
 const Home = (props: Props) => {
   return (
     <>
-      {/* <DevUpdateScrollEffect /> */}
+      <DevUpdateScrollEffect />
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
           Get organized, with <span className="fmly-title">fmly</span>!

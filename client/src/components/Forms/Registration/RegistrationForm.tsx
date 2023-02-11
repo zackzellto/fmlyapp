@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import { FormControl } from "@mui/material";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 import axios from "axios";
 import { PrimaryButton } from "../../Buttons/PrimaryButton";
 import "../FormStyles.css";
 import { Grid } from "@material-ui/core";
-import MomentUtils from "@date-io/moment";
-import {
-  KeyboardDatePicker,
-  MuiPickersUtilsProvider,
-} from "@material-ui/pickers";
-import KeyboardDateInput from "@material-ui/pickers/_shared/KeyboardDateInput";
+import { KeyboardDatePicker } from "@material-ui/pickers";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,8 +28,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const UserRegistrationForm = (props) => {
+export const UserRegistrationForm = () => {
   const classes = useStyles();
+  const [profilePicture, setProfilePicture] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [birthday, setBirthday] = useState(new Date());
@@ -75,6 +72,16 @@ export const UserRegistrationForm = (props) => {
       <h1 className="form-title">Create an account</h1>
       <form className={classes.root} noValidate autoComplete="off">
         <div>
+          <IconButton
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            value={profilePicture}
+            onChange={(e: any) => setProfilePicture(e.target.value)}
+            color="inherit"
+          >
+            <MenuIcon />
+          </IconButton>
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <TextField
