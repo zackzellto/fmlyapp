@@ -7,6 +7,12 @@ import axios from "axios";
 import { PrimaryButton } from "../../Buttons/PrimaryButton";
 import "../FormStyles.css";
 import { Grid } from "@material-ui/core";
+import MomentUtils from "@date-io/moment";
+import {
+  KeyboardDatePicker,
+  MuiPickersUtilsProvider,
+} from "@material-ui/pickers";
+import KeyboardDateInput from "@material-ui/pickers/_shared/KeyboardDateInput";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,22 +32,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const UserRegistrationForm = () => {
+export const UserRegistrationForm = (props) => {
   const classes = useStyles();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [birthday, setBirthday] = useState("");
+  const [birthday, setBirthday] = useState(new Date());
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [firstNameError, setFirstNameError] = useState(false);
   const [lastNameError, setLastNameError] = useState(false);
-  const [birthdayError, setBirthdayError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [confirmPasswordError, setConfirmPasswordError] = useState(false);
 
-  // Validates an email address.
   const validateEmail = (email: string) => {
     const re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -51,6 +55,7 @@ export const UserRegistrationForm = () => {
   const handleSubmit = () => {
     axios
       .post("http://localhost:8088/users", {
+        profilePicture: profilePicture,
         firstName: firstName,
         lastName: lastName,
         birthday: birthday,
@@ -100,16 +105,17 @@ export const UserRegistrationForm = () => {
           </Grid>
           <Grid container spacing={2}>
             <Grid item xs={6}>
-              <TextField
-                error={birthdayError}
-                id="outlined-error-helper-text"
+              <KeyboardDatePicker
+                autoOk
+                variant="inline"
+                inputVariant="outlined"
                 label="Birthday"
-                variant="outlined"
+                format="MM/DD/YYYY"
                 value={birthday}
-                onChange={(e) => {
-                  setBirthday(e.target.value);
-                  setBirthdayError(false);
-                }}
+                InputAdornmentProps={{ position: "start" }}
+                onChange={(date) =>
+                  setBirthday(date ? date.toDate() : new Date())
+                }
               />
             </Grid>
             <Grid item xs={6}>
@@ -165,9 +171,6 @@ export const UserRegistrationForm = () => {
           if (lastName === "") {
             setLastNameError(true);
           }
-          if (birthday === "") {
-            setBirthdayError(true);
-          }
           if (email === "") {
             setEmailError(true);
           }
@@ -180,7 +183,6 @@ export const UserRegistrationForm = () => {
           if (
             firstName !== "" &&
             lastName !== "" &&
-            birthday !== "" &&
             email !== "" &&
             password !== "" &&
             confirmPassword !== ""
