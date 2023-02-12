@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Axios from "axios";
 import { validateEmail } from "../FormValidationChecker";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export const WaitlistSignupForm = () => {
   const classes = useStyles();
   const [email, setEmail] = useState("");
+  const { t, i18n } = useTranslation();
 
   const checkEmail = () => {
     if (validateEmail(email)) {
@@ -35,7 +37,7 @@ export const WaitlistSignupForm = () => {
         }
       );
     } else {
-      alert("Please enter a valid email address");
+      alert(t("alert.invalidEmail"));
     }
   };
 
@@ -45,7 +47,7 @@ export const WaitlistSignupForm = () => {
         <TextField
           className="interest-signup-input"
           id="outlined-email-input"
-          label="Email"
+          label={t("general.email")}
           type="email"
           variant="outlined"
           value={email}

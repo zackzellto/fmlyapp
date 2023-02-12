@@ -1,0 +1,51 @@
+{
+  "general": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "confirmPassword": "Confirm Password",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "delete": "Delete",
+    "edit": "Edit",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "or": "Or",
+    "continueWithFacebook": "Continue with Facebook",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithApple": "Continue with Apple",
+    "date": "Date",
+    "search": "Search",
+    "language": "Language"
+  },
+
+  "greetings": {
+    "goodMorning": "Good Morning, {name}",
+    "goodAfternoon": "Good Afternoon, {name}",
+    "goodEvening": "Good Evening, {name}"
+  },
+
+  "login": {
+    "forgotPassword": "Forgot Password?",
+    "register": "Register"
+  },
+
+  "alerts": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "invalidEmail": "Invalid email address, please try again.",
+    "invalidPassword": "Invalid password, please try again."
+  },
+
+  "terms_of_service": {
+    "title": "Terms of Service",
+    "intro": "Welcome to our household family productivity application! By using our application, you agree to be bound by the following terms of service.",
+    "paymentTerms": "If the application is a paid service, the terms of service should include information about payment options, pricing, and billing.",
+    "privacyPolicy": "The terms of service should also include a link to the privacy policy.",
+    "refundPolicy": "The terms of service should explain the conditions under which users can request a refund and the process for doing so.",
+    "conclusion": "By using our household family productivity application, you agree to these terms of service. If you do not agree to these terms, please do not use the application."
+  }
+}
