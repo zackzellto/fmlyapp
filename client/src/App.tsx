@@ -31,7 +31,7 @@ i18n.use(initReactI18next).init({
 });
 
 const App = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
