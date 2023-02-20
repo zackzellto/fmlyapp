@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Alert, Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import iPhoneMockup from "../components/Images/iPhoneMockup.png";
 import "../Styles/HomeScreenStyles.css";
@@ -8,7 +8,6 @@ import PlayStoreButton from ".././assets/android-download-button.svg";
 import FreePricingModel from "../components/Cards/PricingStructureFree";
 import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
-import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
 import { WaitlistSignupForm } from "../components/Forms/Waitlist/WaitlistSignupForm";
 
 type Props = {};
@@ -16,7 +15,8 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <>
-      <DevUpdateScrollEffect />
+      {/* <DevUpdateScrollEffect /> */}
+
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
           Get organized, with <span className="fmly-title">fmly</span>!

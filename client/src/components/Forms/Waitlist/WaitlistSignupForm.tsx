@@ -30,8 +30,8 @@ export const WaitlistSignupForm = () => {
     if (checkEmail()) {
       e.preventDefault();
       await Axios.post("http://localhost:8088/WaitlistSignup", { email }).then(
-        (res) => {
-          console.log(res);
+        (response) => {
+          console.log(response);
         }
       );
     } else {
