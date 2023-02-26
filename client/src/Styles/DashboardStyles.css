@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    .dashboard-info-bg{
+        background-color: #D1B2FF;
+        margin-left: 55px;
+        height: 600px;
+        width: 1100px;
+    }
+}

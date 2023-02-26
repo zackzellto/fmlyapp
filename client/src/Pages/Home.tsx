@@ -10,6 +10,7 @@ import WoodenHandMockup from ".././assets/wooden-hand-mockup.svg";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
 import { WaitlistSignupForm } from "../components/Forms/Waitlist/WaitlistSignupForm";
 import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
+import DashboardInfo from "../components/Dashboard/DashboardInfo";
 
 type Props = {};
 
@@ -63,6 +64,8 @@ const Home = (props: Props) => {
             </a>
           </Grid>
         </Grid>
+        <hr className="homepage-hr" />
+        <DashboardInfo />
         <hr className="homepage-hr" />
         <Grid>
           <strong className="pricing-options-text">Pricing Options</strong>
