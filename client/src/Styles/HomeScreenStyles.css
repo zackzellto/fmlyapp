@@ -168,7 +168,7 @@
   }
 
   .title{
-    font-size: 5rem;
+    font-size: 110px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #000000;
@@ -182,7 +182,7 @@
   }
 
   .fmly-title{
-    font-size: 5.5rem;
+    font-size: 120px;
     font-weight: 600;
     font-family: 'Paytone One', sans-serif;
     margin: 0;
@@ -193,7 +193,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .iPhone-mockup{
+  .wooden-hand-mockup{
     width: 40%;
     max-width: 600px;
     height: auto;
@@ -211,7 +211,7 @@
       transform: translatey(0);
     }
     50% {
-      transform: translatey(-20px);
+      transform: translatey(-10px);
     }
     100% {
       transform: translatey(0);
@@ -239,6 +239,10 @@
     color: #000000;
     position: relative;
   }
+  
+  .info-text-br{
+    margin-top: 10px;
+  }
 
   .dev-update-text{
     font-family: 'Poppins', sans-serif;
@@ -253,14 +257,14 @@
 
   .demo-button{
     background: #21f3ce;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     color: #000000;
     font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 17px;
     height: 56px;
-    width: 240px;
+    width: 220px;
     bottom: 70px;
     position: relative;
     text-transform: none;
@@ -269,8 +273,8 @@
   }
 
   .interest-signup-input{
-    width: 80%;
-    max-width: 450px;
+    width: 50%;
+    max-width: 550px;
     height: auto;
     margin: 0;
     padding: 0;
@@ -281,7 +285,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .QR-code{
+  /* .QR-code{
     width: 40%;
     max-width: 200px;
     height: auto;
@@ -298,7 +302,7 @@
     color: #000000;
     position: relative;
     margin-top: 20px;
-  }
+  } */
 
   .play-store-button{
     width: 40%;

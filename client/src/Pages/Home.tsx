@@ -1,14 +1,15 @@
 import { Alert, Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import iPhoneMockup from "../components/Images/iPhoneMockup.png";
 import "../Styles/HomeScreenStyles.css";
 import QRCode from ".././assets/qrcode-download-app.svg";
 import AppStoreButton from ".././assets/ios-download-button.svg";
 import PlayStoreButton from ".././assets/android-download-button.svg";
 import FreePricingModel from "../components/Cards/PricingStructureFree";
 import PremiumPricingModel from "../components/Cards/PricingStructureUpgrade";
+import WoodenHandMockup from ".././assets/wooden-hand-mockup.svg";
 import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscribe";
 import { WaitlistSignupForm } from "../components/Forms/Waitlist/WaitlistSignupForm";
+import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
 
 type Props = {};
 
@@ -27,7 +28,7 @@ const Home = (props: Props) => {
           more, all in one platform.
         </h3>
         <br />
-        <img className="iPhone-mockup" srcSet={iPhoneMockup} alt="iPhone" />
+        <img className="wooden-hand-mockup" srcSet={WoodenHandMockup}></img>
         <Grid
           sx={{
             marginTop: "250px",
@@ -36,14 +37,15 @@ const Home = (props: Props) => {
           <WaitlistSignupForm />
           <Grid>
             <span className="homepage-download-info-text">
-              When we launch, we'll send you an email with a link to download,
-              or just come back here and check!
+              <div className="info-text-1">Interested in trying out fmly? </div>
+              <br /> Then join the waitlist and be one of the first to use fmly
+              once it is released!
             </span>
           </Grid>
-          <Grid>
+          {/* <Grid>
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
-          </Grid>
-          <span className="QR-code-text"> (Scan to download) </span>
+          </Grid> */}
+          {/* <span className="QR-code-text"> (Scan to download) </span> */}
           <Grid>
             <a href="">
               <img
