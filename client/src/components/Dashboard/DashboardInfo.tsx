@@ -19,15 +19,18 @@ const DashboardInfo = () => {
       <img className="info-arrow-groceries" srcSet={InfoArrowGroceries}></img>
       <Grid>
         <DashboardMockup />
+      </Grid>
+      <Grid>
         <div className="info-card-cashquest">
           <div className="info-text">
             Cash Quest is a creative way to teach kids about money management
-            and hard work. <br />
-            It allows setting challenging goals that can be rewarded with money
-            set by parents and serves as a visual motivator for accountability
-            in family life.
+            and hard work. It allows setting challenging goals that can be
+            rewarded with money set by parents and serves as a visual motivator
+            for accountability in family life.
           </div>
         </div>
+      </Grid>
+      <Grid>
         <div className="info-card-fmlychat">
           <div className="info-text">
             fmlychat is a messaging system that provides ease-of-use directly in
@@ -35,6 +38,8 @@ const DashboardInfo = () => {
             chats, share images, videos, links, etc...
           </div>
         </div>
+      </Grid>
+      <Grid>
         <div className="info-card-dinnertime">
           <div className="info-text">
             dinnertime allows for families to come together to provide input on
@@ -43,6 +48,8 @@ const DashboardInfo = () => {
             also a great use of the bountyboard!
           </div>
         </div>
+      </Grid>
+      <Grid>
         <div className="info-card-groceries">
           <div className="info-text">
             Groceries, lets families collaborate on a list for food and home

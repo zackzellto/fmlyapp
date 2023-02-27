@@ -53,7 +53,7 @@ export const WaitlistSignupForm = () => {
         />
         <Button
           style={{
-            backgroundColor: "#21f3ce",
+            backgroundColor: "#83F3DF",
             fontFamily: "Poppins",
             fontWeight: 700,
             fontSize: 17,

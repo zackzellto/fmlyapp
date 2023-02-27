@@ -7,6 +7,8 @@ const PurpleBG = styled.div`
   margin: auto;
   height: 1100px;
   width: 1300px;
+  max-width: 90%;
+  max-height: auto;
   padding: 10px;
   border-radius: 20px;
 `;

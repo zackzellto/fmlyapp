@@ -1,5 +1,97 @@
 @media screen and (max-width: 768px) {
-    
+    .dashboard-mockup-svg{
+        position: relative;
+        top: 120px;
+        width: 300px;
+        max-width: 90%;
+    }
+
+    .dashboard-info-title{
+        font-size: 34px;
+        color: black;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .info-card-groceries{
+        position: relative;
+        width: 314px;
+        height: 327px;
+        max-width: 100%;
+        max-height: auto;
+        bottom: 1445px;
+        
+        z-index: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 28px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .info-card-fmlychat{
+        position: relative;
+        width: 314px;
+        height: 327px;
+        max-width: 100%;
+        max-height: auto;
+        bottom: 1270px;
+        z-index: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 28px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    }
+
+    .info-card-cashquest{
+        position: relative;
+        width: 314px;
+        height: 327px;
+        max-width: 100%;
+        max-height: auto;
+        bottom: 950px;
+        z-index: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 28px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .info-card-dinnertime{
+        position: relative;
+        width: 314px;
+        height: 327px;
+        max-width: 100%;
+        max-height: auto;
+        bottom: 1120px;
+        left: 120px;
+        z-index: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 28px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .info-text{
+        position: relative;
+        width: 292px;
+        margin: auto;
+        top: 50px;
+        height: 216px;
+        
+        text-align: start;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(-1);
+        color: #000000;
+        text-indent: 10%;
+    }
 }
 
 @media screen and (min-width: 768px) {

@@ -32,10 +32,9 @@ const Home = (props: Props) => {
         <img className="wooden-hand-mockup" srcSet={WoodenHandMockup}></img>
         <Grid
           sx={{
-            marginTop: "250px",
+            marginTop: "500px",
           }}
         >
-          <WaitlistSignupForm />
           <Grid>
             <span className="homepage-download-info-text">
               <div className="info-text-1">Interested in trying out fmly? </div>
@@ -43,6 +42,7 @@ const Home = (props: Props) => {
               once it is released!
             </span>
           </Grid>
+          <WaitlistSignupForm />
           {/* <Grid>
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
           </Grid> */}
