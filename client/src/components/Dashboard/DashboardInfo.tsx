@@ -20,7 +20,11 @@ const DashboardInfo = () => {
       <Grid>
         <DashboardMockup />
       </Grid>
-      <Grid>
+      <Grid
+        sx={{
+          marginBottom: "30px",
+        }}
+      >
         <div className="info-card-cashquest">
           <div className="info-text">
             Cash Quest is a creative way to teach kids about money management
@@ -30,7 +34,11 @@ const DashboardInfo = () => {
           </div>
         </div>
       </Grid>
-      <Grid>
+      <Grid
+        sx={{
+          marginBottom: "30px",
+        }}
+      >
         <div className="info-card-fmlychat">
           <div className="info-text">
             fmlychat is a messaging system that provides ease-of-use directly in
@@ -39,7 +47,11 @@ const DashboardInfo = () => {
           </div>
         </div>
       </Grid>
-      <Grid>
+      <Grid
+        sx={{
+          marginBottom: "30px",
+        }}
+      >
         <div className="info-card-dinnertime">
           <div className="info-text">
             dinnertime allows for families to come together to provide input on
