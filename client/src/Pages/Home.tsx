@@ -32,7 +32,7 @@ const Home = (props: Props) => {
         <img className="wooden-hand-mockup" srcSet={WoodenHandMockup}></img>
         <Grid
           sx={{
-            marginTop: "500px",
+            marginTop: "150px",
           }}
         >
           <Grid>
@@ -48,7 +48,7 @@ const Home = (props: Props) => {
           </Grid> */}
           {/* <span className="QR-code-text"> (Scan to download) </span> */}
           <Grid>
-            <a href="">
+            {/* <a href="">
               <img
                 className="app-store-button"
                 srcSet={AppStoreButton}
@@ -61,7 +61,7 @@ const Home = (props: Props) => {
                 srcSet={PlayStoreButton}
                 alt="Play Store Button"
               />
-            </a>
+            </a> */}
           </Grid>
         </Grid>
         <hr className="homepage-hr" />

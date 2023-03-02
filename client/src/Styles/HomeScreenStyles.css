@@ -12,11 +12,12 @@
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px; 
+    margin-bottom: 50px; 
     position: relative;
-    top: 50px;
+    top: 30px;
     text-align: start;
     max-width: fit-content;
+    
   }
 
   .fmly-title{
@@ -33,13 +34,14 @@
   }
 
   .wooden-hand-mockup{
-    width: 70%;
+    display: none;
+    /* width: 70%;
     max-width: 500px;
     max-height: auto;
     padding: 0;
     position: relative;
     top: 90px;
-    animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite; */
   }
 
   .dev-update-text{
@@ -65,7 +67,7 @@
     padding: 0;
     position: relative;
     text-align: start;
-    top: 100px;
+    top: 30px;
   }
 
   .homepage-download-info-text{
@@ -74,7 +76,7 @@
     font-weight: 700;
     color: #000000;
     position: relative;
-
+    top: 50px;
   }
 
   .demo-button{
@@ -95,7 +97,7 @@
     margin: 0;
     padding: 0;
     position: relative;
-    bottom: 400px;
+    bottom: 220px;
   }  
 
   .QR-code{
