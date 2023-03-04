@@ -73,7 +73,7 @@ const Home = (props: Props) => {
         <Grid container spacing={6}>
           <FreePricingModel />
           <PremiumPricingModel />
-          <SubscriptionPricingModel />
+          {/* <SubscriptionPricingModel /> */}
         </Grid>
         <hr className="homepage-hr" />
       </Container>

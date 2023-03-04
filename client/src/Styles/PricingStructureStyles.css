@@ -1,14 +1,16 @@
 .pricing-box-free{
     width: 320px;
-    height: auto;
+    height: 600px;
+    max-height: auto;
+    background-color: #21F3CE;
     margin: auto;
     position: relative;
-    margin-top: 75px;
   }
 
 .pricing-box-subscribe{
     width: 320px;
-    height: auto;
+    height: 600px;
+    max-height: auto;
     margin: auto;
     position: relative;
     margin-top: 75px;
@@ -17,7 +19,8 @@
 
 .pricing-box-upgrade{
     width: 320px;
-    height: auto;
+    height: 600px;
+    max-height: auto;
     margin: auto;
     position: relative;
     margin-top: 75px;

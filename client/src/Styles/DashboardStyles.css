@@ -4,6 +4,7 @@
         margin: auto;
         width: 300px;
         max-width: 90%;
+        top: 5px;
     }
 
     .purple-bg-mockup{
@@ -21,7 +22,10 @@
         font-size: 34px;
         color: black;
         font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        margin-top: -50px;
         text-decoration: underline;
+        margin-bottom: 30px;
     }
 
     .info-card-groceries{
@@ -102,6 +106,23 @@
         transform: scaleX(-1);
         color: #000000;
         text-indent: 10%;
+    }
+
+    .info-arrow-groceries{
+        display: none;
+    }
+
+    .info-arrow-fmlychat{
+        display: none;
+
+    }
+
+    .info-arrow-cashquest{
+        display: none;
+    }
+
+    .info-arrow-dinnertime{
+        display: none;
     }
 }
 
