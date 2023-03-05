@@ -57,7 +57,7 @@ const Home = (props: Props) => {
             </a>
             <a href="">
               <img
-                className="play-store-button"
+                className="play-store-button"  
                 srcSet={PlayStoreButton}
                 alt="Play Store Button"
               />
