@@ -27,6 +27,82 @@
         text-decoration: underline;
         margin-bottom: 30px;
     }
+    
+    .info-card-dinnertime-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
+        position: relative;
+        top: 18px;
+    }
+
+    .info-card-dinnertime-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #F1F383
+    }
+
+    .info-card-cashquest-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
+        position: relative;
+        top: 18px;
+    }
+
+    .info-card-cashquest-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #F199D8
+    }
+
+    .info-card-fmlychat-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
+        position: relative;
+        top: 18px;
+    }
+
+    .info-card-fmlychat-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #CBF4AB
+    }
+
+    .info-card-groceries-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
+        position: relative;
+        top: 18px;
+    }
+
+    .info-card-groceries-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #83CBF3
+    }
 
     .info-card-groceries{
         position: relative;

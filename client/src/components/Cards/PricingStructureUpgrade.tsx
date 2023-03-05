@@ -1,10 +1,5 @@
-import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Card, Grid } from "@material-ui/core";
+import { Card } from "@material-ui/core";
 import "../../Styles/PricingStructureStyles.css";
 import StarIconSVG from "../../assets/star-icon.svg";
 import RainbowIconSVG from "../../assets/rainbow-icon.svg";
@@ -27,21 +22,20 @@ const PremiumPricingModel = () => {
           textShadow: "0px 5px 5px rgba(0, 0, 0, 0.25)",
         }}
       >
-        Upgrade
+        Premium
       </Typography>
       <div className="pricing-box-text-upgrade">
           <ul>
-            <li>
+            
               <img srcSet={StarIconSVG} />              
-            </li>
+            
             <li>
               <img srcSet={RainbowIconSVG} />
             </li>
             <li>
               <img srcSet={GreenCheckmark} />
             </li>
-          </ul>
-          
+          </ul>          
       </div>
     </Card>
   );

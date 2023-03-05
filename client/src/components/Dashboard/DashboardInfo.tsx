@@ -26,6 +26,9 @@ const DashboardInfo = () => {
         }}
       >
         <div className="info-card-cashquest">
+        <div className="info-card-cashquest-title-bg">
+            <div className="info-card-cashquest-title">Cash Quest</div>
+            </div>
           <div className="info-text">
             Cash Quest is a creative way to teach kids about money management
             and hard work. It allows setting challenging goals that can be
@@ -40,6 +43,9 @@ const DashboardInfo = () => {
         }}
       >
         <div className="info-card-fmlychat">
+        <div className="info-card-fmlychat-title-bg">
+            <div className="info-card-fmlychat-title">fmlychat</div>
+            </div>
           <div className="info-text">
             fmlychat is a messaging system that provides ease-of-use directly in
             the fmly app. You can chat one-on-one, add fmly members to group
@@ -53,6 +59,9 @@ const DashboardInfo = () => {
         }}
       >
         <div className="info-card-dinnertime">
+          <div className="info-card-dinnertime-title-bg">
+            <div className="info-card-dinnertime-title">dinnertime</div>
+            </div>
           <div className="info-text">
             dinnertime allows for families to come together to provide input on
             what sounds good for family meals. Share recipes, images, or full
@@ -63,6 +72,9 @@ const DashboardInfo = () => {
       </Grid>
       <Grid>
         <div className="info-card-groceries">
+        <div className="info-card-groceries-title-bg">
+            <div className="info-card-groceries-title">groceries</div>
+            </div>
           <div className="info-text">
             Groceries, lets families collaborate on a list for food and home
             supplies. Share the list and even delegate access for others to add

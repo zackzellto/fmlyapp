@@ -144,11 +144,9 @@
 
   .homepage-hr{
     width: 80%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
     border: 1px solid #848f8dad;
     color: #83F3DF;
-    margin-bottom: 100px;
   }
 
   .pricing-options-text{
@@ -156,9 +154,7 @@
     font-weight: 600;
     color: #888181;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
     position: relative;
-    margin-bottom: 30px;
     text-align: start;
     max-width: fit-content;
   }
