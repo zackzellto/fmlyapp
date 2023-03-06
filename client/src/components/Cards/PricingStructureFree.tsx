@@ -1,9 +1,5 @@
 import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Card, Grid } from "@material-ui/core";
 import "../../Styles/PricingStructureStyles.css";
 
@@ -17,23 +13,25 @@ const FreePricingModel = () => {
 
   return (
     <Card className="pricing-box-free">
-      <Typography
-        className="pricing-box-title"
-        sx={{
-          fontFamily: "Paytone One, sans-serif",
-          color: "#FFFFFF",
-          fontSize: "2.5rem",
-          fontWeight: "bold",
-          padding: ".5rem",
-          backgroundColor: "#21f3ce",
-          textShadow: "0px 5px 5px rgba(0, 0, 0, 0.25)",
-        }}
-      >
+      <div className="pricing-box-free-bg">
+      <div className="pricing-box-free-title">
         Free
-      </Typography>
-      <div className="pricing-box-text-free">
-        
       </div>
+      
+
+      
+      </div>
+      <div className="pricing-box-text-free">
+        <div className="included-features" >Included Features</div>
+        <ul>
+          <li>Calendar</li>
+          <li>dinnertime!</li>
+          <li>fmlychat</li>
+          <li>Groceries</li>
+          <li>To-Do List</li>
+        </ul>
+      </div>
+
     </Card>
   );
 };

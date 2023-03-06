@@ -5,6 +5,17 @@
     background-color: #21F3CE;
     margin: auto;
     position: relative;
+    margin-top: 60px;    
+  }
+
+  .pricing-box-premium{
+    width: 320px;
+    height: 600px;
+    max-height: auto;
+    background-color: #21F3CE;
+    margin: auto;
+    position: relative;
+    margin-top: 60px;    
   }
 
 .pricing-box-subscribe{
@@ -26,14 +37,76 @@
     margin-top: 75px;
   }
 
+
   .pricing-box-text-free{
-    font-size: 1.5rem;
+    font-size: 26px;
     font-weight: 400;
     color: #000000;
     margin: 0;
-    background-color: #21F3CE;
     padding: 2;
     position: relative;
+  }
+
+  .pricing-box-free-title{
+    font-size: 46px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    padding: 2;
+    position: relative;
+    top: 90px;
+  }
+
+  .pricing-box-free-bg{
+    margin: 0;
+    border-radius: 15px;
+    height: 200px;
+    background-color: #F59999;
+    padding: 2;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+  }
+
+  li{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .included-features{
+    margin-top: 30px;
+    text-decoration: underline;
+  }
+
+  .pricing-box-text-premium{
+    font-size: 26px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    padding: 2;
+    position: relative;
+  }
+
+  .pricing-box-premium-title{
+    font-size: 46px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    padding: 2;
+    position: relative;
+    top: 90px;
+  }
+
+  .pricing-box-premium-bg{
+    margin: 0;
+    border-radius: 15px;
+    height: 200px;
+    background-color: #83CBF3;
+    padding: 2;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
   }
 
   .pricing-box-text-upgrade{

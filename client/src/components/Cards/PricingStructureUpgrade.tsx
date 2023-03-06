@@ -9,34 +9,26 @@ import GreenCheckmark from "../../assets/green-checkmark.svg";
 const PremiumPricingModel = () => {
  
   return (
-    <Card className="pricing-box-upgrade">
-      <Typography
-        className="pricing-box-title"
-        sx={{
-          fontFamily: "Paytone One, sans-serif",
-          color: "#FFFFFF",
-          fontSize: "2.5rem",
-          fontWeight: "bold",
-          padding: ".5rem",
-          backgroundColor: "#F850F1",
-          textShadow: "0px 5px 5px rgba(0, 0, 0, 0.25)",
-        }}
-      >
+    <Card className="pricing-box-premium">
+      <div className="pricing-box-premium-bg">
+      <div className="pricing-box-premium-title">
         Premium
-      </Typography>
-      <div className="pricing-box-text-upgrade">
-          <ul>
-            
-              <img srcSet={StarIconSVG} />              
-            
-            <li>
-              <img srcSet={RainbowIconSVG} />
-            </li>
-            <li>
-              <img srcSet={GreenCheckmark} />
-            </li>
-          </ul>          
       </div>
+      
+
+      
+      </div>
+      <div className="pricing-box-text-premium">
+        <div className="included-features" >Included Features</div>
+        <ul>
+          <li>Calendar</li>
+          <li>dinnertime!</li>
+          <li>fmlychat</li>
+          <li>Groceries</li>
+          <li>To-Do List</li>
+        </ul>
+      </div>
+
     </Card>
   );
 };

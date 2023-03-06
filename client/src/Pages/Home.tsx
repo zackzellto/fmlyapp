@@ -64,9 +64,9 @@ const Home = (props: Props) => {
             </a> */}
           </Grid>
         </Grid>
-        <hr className="homepage-hr" />
+        <hr className="homepage-hr-1" />
         <DashboardInfo />
-        <hr className="homepage-hr" />
+        <hr className="homepage-hr-2" />
         <Grid>
           <strong className="pricing-options-text">Pricing Options</strong>
         </Grid>
@@ -75,7 +75,7 @@ const Home = (props: Props) => {
           <PremiumPricingModel />
           {/* <SubscriptionPricingModel /> */}
         </Grid>
-        <hr className="homepage-hr" />
+        <hr className="homepage-hr-3" />
       </Container>
     </>
   );

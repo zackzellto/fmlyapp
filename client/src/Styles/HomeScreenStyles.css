@@ -142,11 +142,31 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .homepage-hr{
+  .homepage-hr-1{
     width: 80%;
-    margin-top: 20px;
     border: 1px solid #848f8dad;
     color: #83F3DF;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 40px;
+  }
+
+  .homepage-hr-2{
+    width: 80%;
+    border: 1px solid #848f8dad;
+    color: #83F3DF;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .homepage-hr-3{
+    width: 80%;
+    border: 1px solid #848f8dad;
+    color: #83F3DF;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .pricing-options-text{
@@ -157,6 +177,8 @@
     position: relative;
     text-align: start;
     max-width: fit-content;
+    margin-top: 20px;
+    text-decoration: underline;
   }
 }
 
