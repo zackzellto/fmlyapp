@@ -26,6 +26,9 @@ const PremiumPricingModel = () => {
           <li>fmlychat</li>
           <li>Groceries</li>
           <li>To-Do List</li>
+          <li>Find My Fmly</li>
+          <li>bountyboard</li>
+          <li>Cash Quest!</li>
         </ul>
       </div>
 
