@@ -11,6 +11,7 @@ import SubscriptionPricingModel from "../components/Cards/PricingStructureSubscr
 import { WaitlistSignupForm } from "../components/Forms/Waitlist/WaitlistSignupForm";
 import DevUpdateScrollEffect from "../components/AppBar/DevUpdateScrollEffect";
 import DashboardInfo from "../components/Dashboard/DashboardInfo";
+import PremiumFeatures from "../components/PremiumFeatures/PremiumFeatures";
 
 type Props = {};
 
@@ -67,9 +68,9 @@ const Home = (props: Props) => {
         <hr className="homepage-hr-1" />
         <DashboardInfo />
         <hr className="homepage-hr-2" />
-        <Grid>
-          <strong className="premium-features-title">Premium Features</strong>
-        </Grid>
+       
+          <PremiumFeatures />
+       
         <Grid>
           <strong className="pricing-options-text">Pricing Options</strong>
         </Grid>
