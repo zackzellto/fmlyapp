@@ -203,76 +203,136 @@
 }
 
 @media screen and (min-width: 768px) {
-    .dashboard-info-bg{
-        background-color: #D1B2FF;
-        margin-left: 55px;
-        height: 600px;
-        width: 1100px;
-
-    }
-
     .dashboard-mockup-svg{
         position: relative;
-        top: 120px;
+        margin: auto;
+        width: 300px;
+        max-width: 90%;
+        top: 5px;
+    }
+
+    .purple-bg-mockup{
+        background-color: #d1b2ff;
+        margin: auto;
+        width: 1300px;
+        max-width: 90%;
+        max-height: auto;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 30px;
     }
 
     .dashboard-info-title{
         font-size: 34px;
         color: black;
         font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 50px;
         text-decoration: underline;
-    }
-
-    .info-arrow-groceries{
-        position: relative;
-        left: 110px;
-        top: 700px;
-    }
-
-    .info-arrow-fmlychat{
-        position: relative;
-        left: 330px;
-        top: 520px;
+        margin-bottom: 30px;
 
     }
-
-    .info-arrow-cashquest{
+    
+    .info-card-dinnertime-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
         position: relative;
-        right: 110px; 
-        top: 520px;
+        top: 18px;
     }
 
-    .info-arrow-dinnertime{
+    .info-card-dinnertime-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #F1F383
+    }
+
+    .info-card-cashquest-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
         position: relative;
-        right: 330px;
-        top: 700px;
+        top: 18px;
+    }
+
+    .info-card-cashquest-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #F199D8
+    }
+
+    .info-card-fmlychat-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
+        position: relative;
+        top: 18px;
+    }
+
+    .info-card-fmlychat-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #CBF4AB
+    }
+
+    .info-card-groceries-title{
+        font-size: 34px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        color: black;
+        margin: auto;
+        position: relative;
+        top: 18px;
+    }
+
+    .info-card-groceries-title-bg{
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: #83CBF3
     }
 
     .info-card-groceries{
         position: relative;
+        margin-top: 100px;
         width: 314px;
         height: 327px;
         max-width: 100%;
         max-height: auto;
-        bottom: 1445px;
-        left: 1060px;
+        margin: auto;
         z-index: 1;
-        background: #FFFFFF;
+        background: #83CBF3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 28px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 
     .info-card-fmlychat{
-        position: relative;
+        position: relative;                                                                                                                                                                                                       
         width: 314px;
         height: 327px;
         max-width: 100%;
         max-height: auto;
-        bottom: 1270px;
-        left: 1060px;
+        margin: auto;
         z-index: 1;
-        background: #FFFFFF;
+        background: #CBF4AB;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 28px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -281,14 +341,14 @@
 
     .info-card-cashquest{
         position: relative;
+        margin-bottom: 30px;
         width: 314px;
         height: 327px;
         max-width: 100%;
         max-height: auto;
-        bottom: 950px;
-        left: 120px;
+        margin: auto;
         z-index: 1;
-        background: #FFFFFF;
+        background: #F199D8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 28px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -300,10 +360,9 @@
         height: 327px;
         max-width: 100%;
         max-height: auto;
-        bottom: 1120px;
-        left: 120px;
+        margin: auto;
         z-index: 1;
-        background: #FFFFFF;
+        background: #F1F383;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 28px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -328,6 +387,35 @@
         transform: scaleX(-1);
         color: #000000;
         text-indent: 10%;
+    }
+
+    .info-arrow-groceries{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        transform: scaleX(-1);
+    }
+
+    .info-arrow-fmlychat{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        transform: scaleX(-1);
+
+    }
+
+    .info-arrow-cashquest{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        transform: scaleX(-1);
+    }
+
+    .info-arrow-dinnertime{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        transform: scaleX(-1);
     }
 
 }

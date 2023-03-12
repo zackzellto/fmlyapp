@@ -86,7 +86,7 @@
     margin: 0;
     padding: 0; 
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -100,7 +100,7 @@
     bottom: 220px;
   }  
 
-  .QR-code{
+  /* .QR-code{
     width: 50%;
     max-width: 200px;
     height: auto;
@@ -117,7 +117,7 @@
     color: #000000;
     position: relative;
     margin-top: 20px;
-  }
+  } */
 
   .play-store-button{
     width: 40%;
@@ -125,9 +125,9 @@
     height: auto;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
     margin-left: 20px;
     position: relative;
+    bottom: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -137,8 +137,8 @@
     height: auto;
     margin: 0;
     padding: 0;
+    bottom: 40px;
     position: relative;
-    margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -148,6 +148,7 @@
     color: #83F3DF;
     position: relative;
     bottom: 50px;
+    margin-top: 40px;
     margin-bottom: 40px;
   }
 
@@ -189,7 +190,7 @@
   }
 
   .title{
-    font-size: 110px;
+    font-size: 80px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #000000;
@@ -197,13 +198,12 @@
     padding: 0;
     position: relative;
     top: 110px;
-    left: 50px;
     text-align: start;
     max-width: fit-content;
   }
 
   .fmly-title{
-    font-size: 120px;
+    font-size: 90px;
     font-weight: 600;
     font-family: 'Paytone One', sans-serif;
     margin: 0;
@@ -221,9 +221,7 @@
     margin: 0;
     padding: 0;
     position: relative;
-    top: 20px;
-    float: right;
-    margin-bottom: 30px;
+    left: 370px;
     animation: float 6s ease-in-out infinite;
   }
 
@@ -254,26 +252,18 @@
   }
 
   .homepage-download-info-text{
-    font-size: 1rem;    
+    font-size: 16px;    
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #000000;
     position: relative;
+    bottom: 650px;
+    left: 70px;
+    width: fit-content;
   }
   
   .info-text-br{
     margin-top: 10px;
-  }
-
-  .dev-update-text{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #000000;
-    max-width: 100%;
-    line-height: normal;
-    position: relative;
-    text-align: start;
-    
   }
 
   .demo-button{
@@ -286,7 +276,8 @@
     font-size: 17px;
     height: 56px;
     width: 220px;
-    bottom: 70px;
+    bottom: 570px;
+    right: 250px;
     position: relative;
     text-transform: none;
     z-index: 1; 
@@ -300,9 +291,8 @@
     margin: 0;
     padding: 0;
     position: relative;
-    bottom: 70px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    bottom: 577px;
+    right: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -335,6 +325,8 @@
     margin-left: 20px;
     position: relative;
     margin-bottom: 100px;
+    right: 240px;
+    bottom: 500px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -345,17 +337,17 @@
     margin: 0;
     padding: 0;
     position: relative;
-    margin-top: 50px;
+    right: 240px;
+    bottom: 500px;
     margin-bottom: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .homepage-hr{
+  .homepage-hr-1{
     width: 80%;
-    margin-top: 40px;
     margin-bottom: 100px;
+    margin-top: -400px;
     border: 1px solid #848f8dad;
-    color: #83F3DF;
     
   }
 

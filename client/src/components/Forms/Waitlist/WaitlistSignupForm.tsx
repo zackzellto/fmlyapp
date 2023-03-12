@@ -60,7 +60,6 @@ export const WaitlistSignupForm = () => {
             height: 56,
             width: 250,
             maxWidth: 320,
-            bottom: 220,
             position: "relative",
             textTransform: "none",
             zIndex: 1,

@@ -37,11 +37,11 @@ const Home = (props: Props) => {
           }}
         >
           <Grid>
-            <span className="homepage-download-info-text">
+            <div className="homepage-download-info-text">
               <div className="info-text-1">Interested in trying out fmly? </div>
               <br /> Then join the waitlist and be one of the first to use fmly
               once it is released!
-            </span>
+            </div>
           </Grid>
           <WaitlistSignupForm />
           {/* <Grid>
@@ -49,7 +49,7 @@ const Home = (props: Props) => {
           </Grid> */}
           {/* <span className="QR-code-text"> (Scan to download) </span> */}
           <Grid>
-            {/* <a href="">
+            <a href="">
               <img
                 className="app-store-button"
                 srcSet={AppStoreButton}
@@ -62,7 +62,7 @@ const Home = (props: Props) => {
                 srcSet={PlayStoreButton}
                 alt="Play Store Button"
               />
-            </a> */}
+            </a>
           </Grid>
         </Grid>
         <hr className="homepage-hr-1" />
@@ -70,12 +70,12 @@ const Home = (props: Props) => {
         <hr className="homepage-hr-2" />
        
           <PremiumFeatures />
-       
+       <hr className="homepage-hr-2" />
         <Grid>
-        <hr className="homepage-hr-2" />
+        
           <strong className="pricing-options-text">Pricing Options</strong>
         </Grid>
-        <Grid container spacing={6}>
+        <Grid container >
           <FreePricingModel />
           <PremiumPricingModel />
           {/* <SubscriptionPricingModel /> */}
