@@ -40,11 +40,13 @@
     margin-bottom: 30px;
     position: relative;
     left: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 .premium-features-text{
     color: #888181;
-    font-family: ;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 40px;
     margin-bottom: 40px;
@@ -55,4 +57,48 @@
     font-weight: 600;
     font-family: 'Paytone One', sans-serif;
     font-size: 40px;
+}
+
+.blue-square-pf{
+    background-color: #4D57B1;
+    border-radius: 40px;
+    width: 350px;
+    height: 350px;
+    max-width: 90%;
+    max-height: auto;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+
+.bountyboard-minimal-view{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 18px;
+    height: auto;
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bountyboard-blue-title{
+    color: #83CBF3;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.bountyboard-blue-text{
+    margin-top: 30px;
+    color: black;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 30px;
+    position: relative;
+    left: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }

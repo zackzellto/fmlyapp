@@ -72,6 +72,7 @@ const Home = (props: Props) => {
           <PremiumFeatures />
        
         <Grid>
+        <hr className="homepage-hr-2" />
           <strong className="pricing-options-text">Pricing Options</strong>
         </Grid>
         <Grid container spacing={6}>
