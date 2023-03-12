@@ -1,8 +1,8 @@
 .green-circle-pf {
     background-color: #F3D08D;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 40px;
@@ -17,10 +17,42 @@
 }
 
 .find-my-fmly-map{
-    width: 180px;
+    width: 250px;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
     position: relative;
-    top: 45px;
+    top: 65px;
     z-index: 1;
+}
+
+.fmf-text-svg{
+    position: relative;
+    width: 80%;
+    height: auto;
+    z-index: 1;
+}
+
+.fmf-text{
+    color: black;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 30px;
+    position: relative;
+    left: 36px;
+}
+
+.premium-features-text{
+    color: #888181;
+    font-family: ;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.fmly-pf-text{
+    color: #83F3DF;
+    font-weight: 600;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 40px;
 }
