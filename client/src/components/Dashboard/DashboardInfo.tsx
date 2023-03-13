@@ -1,15 +1,16 @@
 import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
-import DashboardMockup from "./DashboardMockup";
 import "../../Styles/DashboardStyles.css";
 import InfoArrowFmlychat from "../../assets/info-arrow-fmlychat.svg";
 import InfoArrowDinnertime from "../../assets/info-arrow-dinnertime.svg";
 import InfoArrowCashQuest from "../../assets/info-arrow-cashquest.svg";
 import InfoArrowGroceries from "../../assets/info-arrow-groceries.svg";
+import DashboardMockupSVG from "../../assets/fmly-dashboard.svg";
 
 const DashboardInfo = () => {
   return (
-    <div>
+    <Grid container>
+      <div className="purple-bg-mockup">
       <Grid>
         <div className="dashboard-info-title">The Dashboard</div>
       </Grid>
@@ -17,14 +18,12 @@ const DashboardInfo = () => {
       <img className="info-arrow-fmlychat" srcSet={InfoArrowFmlychat}></img>
       <img className="info-arrow-dinnertime" srcSet={InfoArrowDinnertime}></img>
       <img className="info-arrow-groceries" srcSet={InfoArrowGroceries}></img>
-      <Grid>
-        <DashboardMockup />
-      </Grid>
-      <Grid
-        sx={{
-          marginBottom: "30px",
-        }}
-      >
+      <img
+          className="dashboard-mockup-svg"
+          srcSet={DashboardMockupSVG}
+          alt="dashboard-mockup"
+        ></img>
+
         <div className="info-card-cashquest">
         <div className="info-card-cashquest-title-bg">
             <div className="info-card-cashquest-title">Cash Quest</div>
@@ -36,12 +35,7 @@ const DashboardInfo = () => {
             for accountability in family life.
           </div>
         </div>
-      </Grid>
-      <Grid
-        sx={{
-          marginBottom: "30px",
-        }}
-      >
+
         <div className="info-card-fmlychat">
         <div className="info-card-fmlychat-title-bg">
             <div className="info-card-fmlychat-title">fmlychat</div>
@@ -52,13 +46,8 @@ const DashboardInfo = () => {
             chats, share images, videos, links, etc...
           </div>
         </div>
-      </Grid>
-      <Grid
-        sx={{
-          marginBottom: "30px",
-        }}
-      >
-        <div className="info-card-dinnertime">
+
+        <div className="info-card-dinnertime" >
           <div className="info-card-dinnertime-title-bg">
             <div className="info-card-dinnertime-title">dinnertime</div>
             </div>
@@ -69,8 +58,8 @@ const DashboardInfo = () => {
             also a great use of the bountyboard!
           </div>
         </div>
-      </Grid>
-      <Grid>
+
+      
         <div className="info-card-groceries">
         <div className="info-card-groceries-title-bg">
             <div className="info-card-groceries-title">groceries</div>
@@ -82,8 +71,9 @@ const DashboardInfo = () => {
             assigned as a bounty on the bountyboard!
           </div>
         </div>
-      </Grid>
-    </div>
+      </div>
+     
+    </Grid>
   );
 };
 

@@ -215,13 +215,13 @@
   }
 
   .wooden-hand-mockup{
-    width: 40%;
-    max-width: 600px;
+    width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
     position: relative;
-    left: 370px;
+    left: 300px;
     animation: float 6s ease-in-out infinite;
   }
 
@@ -238,17 +238,16 @@
   }
 
   .homepage-info-pitch{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 500;
     color: #000000;
-    max-width: 60%;
+    width: fit-content;
+    max-width: 53%;
     line-height: normal;
     text-indent: 15px;
-    padding: 0;
     position: relative;
     text-align: start;
     top: 150px;
-    left: 50px;
   }
 
   .homepage-download-info-text{
@@ -257,9 +256,10 @@
     font-weight: 700;
     color: #000000;
     position: relative;
-    bottom: 650px;
-    left: 70px;
+    bottom: 500px;
+    left: 35px;
     width: fit-content;
+    max-width: 50%;
   }
   
   .info-text-br{
@@ -276,7 +276,7 @@
     font-size: 17px;
     height: 56px;
     width: 220px;
-    bottom: 570px;
+    bottom: 470px;
     right: 250px;
     position: relative;
     text-transform: none;
@@ -291,8 +291,8 @@
     margin: 0;
     padding: 0;
     position: relative;
-    bottom: 577px;
-    right: 250px;
+    bottom: 478px;
+    right: 300px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -325,8 +325,8 @@
     margin-left: 20px;
     position: relative;
     margin-bottom: 100px;
-    right: 240px;
-    bottom: 500px;
+    right: 270px;
+    bottom: 400px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -337,8 +337,8 @@
     margin: 0;
     padding: 0;
     position: relative;
-    right: 240px;
-    bottom: 500px;
+    right: 270px;
+    bottom: 400px;
     margin-bottom: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }

@@ -36,14 +36,14 @@ const Home = (props: Props) => {
             marginTop: "150px",
           }}
         >
-          <Grid>
+          
             <div className="homepage-download-info-text">
               <div className="info-text-1">Interested in trying out fmly? </div>
               <br /> Then join the waitlist and be one of the first to use fmly
               once it is released!
             </div>
-          </Grid>
-          <WaitlistSignupForm />
+          <Grid>
+          <WaitlistSignupForm /></Grid>
           {/* <Grid>
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
           </Grid> */}

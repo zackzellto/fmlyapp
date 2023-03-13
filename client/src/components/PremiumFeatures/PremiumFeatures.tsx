@@ -12,7 +12,7 @@ const PremiumFeatures = (props: Props) => {
     <div>
       <div className='premium-features-title'>Premium Features</div>
       <Grid>
-      <div className='green-circle-pf' ><img className='find-my-fmly-map' srcSet={fmfMap} alt='fmfMap' ></img> </div>
+      <div className='orange-circle-pf' ><img className='find-my-fmly-map' srcSet={fmfMap} alt='fmfMap' ></img> </div>
       </Grid>
       <Grid>
        <img className='fmf-text-svg' srcSet={fmfText} ></img>

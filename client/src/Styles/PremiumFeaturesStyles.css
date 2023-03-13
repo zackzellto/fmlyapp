@@ -1,10 +1,12 @@
-.green-circle-pf {
+.orange-circle-pf {
     background-color: #F3D08D;
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    display: inline-block;
-    margin-right: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    margin: auto;
     margin-bottom: 40px;
 }
 
@@ -17,18 +19,19 @@
 }
 
 .find-my-fmly-map{
-    width: 250px;
+    width: 100%;
+    max-width: 290px;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
     position: relative;
-    top: 65px;
+    margin: auto;
     z-index: 1;
 }
 
 .fmf-text-svg{
     position: relative;
-    width: 80%;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     z-index: 1;
 }
