@@ -4,12 +4,13 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Axios from "axios";
 import { validateEmail } from "../FormValidationChecker";
+import "../../../Styles/HomeScreenStyles.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: "25ch",
+      width: "35ch",
     },
   },
 }));
@@ -52,18 +53,6 @@ export const WaitlistSignupForm = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <Button
-          style={{
-            backgroundColor: "#83F3DF",
-            fontFamily: "Poppins",
-            fontWeight: 700,
-            fontSize: 17,
-            height: 56,
-            width: 250,
-            maxWidth: 320,
-            position: "relative",
-            textTransform: "none",
-            zIndex: 1,
-          }}
           className="demo-button"
           onClick={handleSubmit}
         >

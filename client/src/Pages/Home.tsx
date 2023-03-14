@@ -18,7 +18,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <>
-      {/* <DevUpdateScrollEffect /> */}
+      <DevUpdateScrollEffect />
 
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
@@ -42,8 +42,7 @@ const Home = (props: Props) => {
               <br /> Then join the waitlist and be one of the first to use fmly
               once it is released!
             </div>
-          <Grid>
-          <WaitlistSignupForm /></Grid>
+          <WaitlistSignupForm />
           {/* <Grid>
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
           </Grid> */}
