@@ -18,7 +18,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <>
-      <DevUpdateScrollEffect />
+      {/* <DevUpdateScrollEffect /> */}
 
       <Container className="home-container" maxWidth="xl">
         <h1 className="title">
@@ -31,11 +31,7 @@ const Home = (props: Props) => {
         </h3>
         <br />
         <img className="wooden-hand-mockup" srcSet={WoodenHandMockup}></img>
-        <Grid
-          sx={{
-            marginTop: "150px",
-          }}
-        >
+       
           
             <div className="homepage-download-info-text">
               <div className="info-text-1">Interested in trying out fmly? </div>
@@ -47,7 +43,7 @@ const Home = (props: Props) => {
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
           </Grid> */}
           {/* <span className="QR-code-text"> (Scan to download) </span> */}
-          <Grid>
+          
             <a href="">
               <img
                 className="app-store-button"
@@ -62,8 +58,8 @@ const Home = (props: Props) => {
                 alt="Play Store Button"
               />
             </a>
-          </Grid>
-        </Grid>
+      
+        
         <hr className="homepage-hr-1" />
         <DashboardInfo />
         <hr className="homepage-hr-2" />

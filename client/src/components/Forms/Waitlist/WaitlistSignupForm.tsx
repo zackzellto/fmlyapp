@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Axios from "axios";
 import { validateEmail } from "../FormValidationChecker";
-import "../../../Styles/HomeScreenStyles.css";
+import "./WaitlistSignup.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,6 +41,7 @@ export const WaitlistSignupForm = () => {
   };
 
   return (
+    <>
     <form className={classes.root} noValidate autoComplete="off">
       <div>
         <TextField
@@ -52,13 +53,13 @@ export const WaitlistSignupForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <Button
+        
+      </div>
+    </form><Button
           className="demo-button"
           onClick={handleSubmit}
         >
           Join Waitlist!
-        </Button>
-      </div>
-    </form>
+        </Button></>
   );
 };

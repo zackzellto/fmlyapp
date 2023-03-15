@@ -220,7 +220,7 @@
     margin: auto;
     display: flex;
     position: relative;
-    left: 300px;
+    left: 450px;
     animation: float 6s ease-in-out infinite;
   }
 
@@ -248,6 +248,7 @@
     text-align: start;
     top: 150px;
     left: 50px;
+
   }
 
   .homepage-download-info-text{
@@ -260,44 +261,14 @@
     left: 50px;
     width: fit-content;
     max-width: 50%;
+    margin-top: 120px;
   }
   
   .info-text-br{
     margin-top: 10px;
   }
 
-  .demo-button{
-    border: 1px solid #000000;
-    background-color: #83F3DF;
-    border-radius: 10px;
-    color: #e41d1d;
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    height: 55px;
-    width: 100%;
-    max-width: 200px;
-    max-height: auto;
-    bottom: 470px;
-    right: 380px;
-    margin: auto;
-    position: relative;
-    text-transform: none;
-    z-index: 1; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .interest-signup-input{
-    width: 50%;
-    max-width: 550px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    bottom: 478px;
-    right: 400px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+ 
 
   /* .QR-code{
     width: 40%;
