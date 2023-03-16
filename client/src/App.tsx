@@ -35,10 +35,10 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path="/" element={<Root />} />
+        {/* <Route path="/" element={<Root />} /> */}
         <Route path="/home" index element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} /> */}
       </>
     )
   );
@@ -50,12 +50,12 @@ const App = () => {
   );
 };
 
-const Root = () => {
-  return (
-    <div className="Root">
-      <Link to="/">Home</Link>
-      <Link to="/data">Data</Link>
-    </div>
-  );
-};
+// const Root = () => {
+//   return (
+//     <div className="Root">
+//       <Link to="/">Home</Link>
+//       <Link to="/data">Data</Link>
+//     </div>
+//   );
+// };
 export default App;

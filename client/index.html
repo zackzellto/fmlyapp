@@ -26,42 +26,8 @@
     ></script>
   </head>
   <body>
-    <!-- Facebook Login Button JavaScript SDK. -->
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=2196346033886893&autoLogAppEvents=1"
-      nonce="ik1uuTX4"
-    ></script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-
-    <!-- Facebook SDK -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          appId: "{your-app-id}",
-          cookie: true,
-          xfbml: true,
-          version: "{api-version}",
-        });
-
-        FB.AppEvents.logPageView();
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
   </body>
 </html>

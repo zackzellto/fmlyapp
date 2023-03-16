@@ -7,7 +7,6 @@ import axios from "axios";
 import { PrimaryButton } from "../../Buttons/PrimaryButton";
 import "../FormStyles.css";
 import { Grid } from "@material-ui/core";
-import FacebookLoginButton from "../../SocialLogins/Facebook/FacebookLoginButton";
 import MainLogo from "../../Logos/MainLogo";
 import { LoginButton } from "../../Buttons/LoginButton";
 
@@ -148,7 +147,7 @@ export const LoginForm = () => {
         <h5> Register</h5>
       </Link>
 
-      <FacebookLoginButton />
+      {/* <FacebookLoginButton /> */}
       <LoginButton handleLogin={handleLogin}>Login</LoginButton>
     </Grid>
   );
