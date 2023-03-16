@@ -39,6 +39,7 @@ export const WaitlistSignupForm = () => {
         <div>
           <Grid container spacing={2}>
             <Grid xs={12} md={6}>
+              <div className="wl-spacer"></div>
               <TextField
               style={{ boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.25)" }}
                 className="wl-input"
@@ -49,6 +50,7 @@ export const WaitlistSignupForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              <div className="wl-spacer"></div>
               <Button
               style={{ 
               backgroundColor: "#83F3DF", 

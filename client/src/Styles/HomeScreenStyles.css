@@ -7,7 +7,7 @@
   }
 
   .title{
-    font-size: 3.4rem;
+    font-size: 48px;
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -15,8 +15,9 @@
     margin-bottom: 50px; 
     position: relative;
     top: 30px;
-    text-align: start;
-    max-width: fit-content;
+    text-align: center;
+    max-width: 100%;
+    
     
   }
 
@@ -29,7 +30,7 @@
     padding: 0;
     width: 100%;
     color: #83F3DF;
-    max-width: fit-content;
+
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -58,7 +59,7 @@
 
 
   .homepage-info-pitch{
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 500;
     color: #000000;
     max-width: 100%;
@@ -66,39 +67,19 @@
     text-indent: 15px;
     padding: 0;
     position: relative;
-    text-align: start;
-    top: 30px;
+    text-align: center;
+    top: 10px;
+
   }
 
   .homepage-download-info-text{
-    font-size: 1rem;    
+    font-size: 14px;    
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #000000;
+    margin-bottom: 40px;
     position: relative;
-    top: 50px;
   }
-
-  .demo-button{
-    width: 40%;
-    max-width: 200px;
-    height: auto;
-    margin: 0;
-    padding: 0; 
-    position: relative;
-    bottom: 200px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .interest-signup-input{
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    bottom: 220px;
-  }  
 
   /* .QR-code{
     width: 50%;
@@ -120,7 +101,7 @@
   } */
 
   .play-store-button{
-    width: 40%;
+    width: 30%;
     max-width: 200px;
     height: auto;
     margin: 0;
@@ -128,11 +109,12 @@
     margin-left: 20px;
     position: relative;
     bottom: 40px;
+    margin-top: 80px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .app-store-button{
-    width: 40%;
+    width: 30%;
     max-width: 200px;
     height: auto;
     margin: 0;
