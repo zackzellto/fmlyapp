@@ -11,11 +11,12 @@
 }
 
 .premium-features-title{
-    color: #888181;
+    font-size: 34px;
+    color: black;
     font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     text-decoration: underline;
     margin-bottom: 40px;
-    font-size: 28px;
 }
 
 .find-my-fmly-map{

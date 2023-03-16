@@ -5,6 +5,7 @@
         width: 300px;
         max-width: 90%;
         top: 5px;
+        margin-bottom: 40px;
     }
 
     .purple-bg-mockup{
@@ -15,7 +16,6 @@
         max-height: auto;
         padding: 10px;
         border-radius: 20px;
-        margin-bottom: 30px;
     }
 
     .dashboard-info-title{
@@ -23,9 +23,9 @@
         color: black;
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
-        margin-top: -50px;
         text-decoration: underline;
-        margin-bottom: 30px;
+        position: relative;
+        bottom: 80px;
     }
     
     .info-card-dinnertime-title{

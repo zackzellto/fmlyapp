@@ -24,7 +24,7 @@
     max-height: auto;
     margin: auto;
     position: relative;
-    margin-top: 75px;
+    margin-top: 70px;
  
   }
 
@@ -34,7 +34,7 @@
     max-height: auto;
     margin: auto;
     position: relative;
-    margin-top: 75px;
+    margin-top: 70px;
   }
 
 
@@ -54,7 +54,8 @@
     margin: 0;
     padding: 2;
     position: relative;
-    top: 90px;
+    text-align: center;
+    top: 70px;
   }
 
   .pricing-box-free-bg{
@@ -89,13 +90,14 @@
   }
 
   .pricing-box-premium-title{
-    font-size: 46px;
-    font-weight: 700;
-    color: #ffffff;
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 40px;
     margin: 0;
     padding: 2;
     position: relative;
-    top: 90px;
+    top: 80px;
   }
 
   .pricing-box-premium-bg{
