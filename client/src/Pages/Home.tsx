@@ -31,14 +31,14 @@ const Home = (props: Props) => {
         </h3>
         <br />
         <img className="wooden-hand-mockup" srcSet={WoodenHandMockup}></img>
-       
+       <WaitlistSignupForm />
           
             <div className="homepage-download-info-text">
               <div className="info-text-1">Interested in trying out fmly? </div>
               <br /> Then join the waitlist and be one of the first to use fmly
               once it is released!
             </div>
-          <WaitlistSignupForm />
+          
           {/* <Grid>
             <img className="QR-code" srcSet={QRCode} alt="QR Code" />{" "}
           </Grid> */}

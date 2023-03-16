@@ -3,20 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Axios from "axios";
+import Grid from "@mui/material/Unstable_Grid2";
 import { validateEmail } from "../FormValidationChecker";
 import "./WaitlistSignup.css";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      width: "35ch",
-    },
-  },
-}));
 
 export const WaitlistSignupForm = () => {
-  const classes = useStyles();
+
   const [email, setEmail] = useState("");
 
   const checkEmail = () => {
@@ -27,7 +20,7 @@ export const WaitlistSignupForm = () => {
     }
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit: React.MouseEventHandler<HTMLButtonElement> = async (e) => {
     if (checkEmail()) {
       e.preventDefault();
       await Axios.post("http://localhost:8088/WaitlistSignup", { email }).then(
@@ -42,24 +35,43 @@ export const WaitlistSignupForm = () => {
 
   return (
     <>
-    <form className={classes.root} noValidate autoComplete="off">
-      <div>
-        <TextField
-          className="interest-signup-input"
-          id="outlined-email-input"
-          label="Email"
-          type="email"
-          variant="outlined"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        
-      </div>
-    </form><Button
-          className="demo-button"
-          onClick={handleSubmit}
-        >
-          Join Waitlist!
-        </Button></>
+      <form noValidate autoComplete="off">
+        <div>
+          <Grid container spacing={2}>
+            <Grid xs={12} md={6}>
+              <TextField
+              style={{ boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.25)" }}
+                className="wl-input"
+                id="outlined-email-input"
+                label="Email"
+                type="email"
+                variant="outlined"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <Button
+              style={{ 
+              backgroundColor: "#83F3DF", 
+              color: "black", 
+              fontWeight: "bold", 
+              fontSize: "16px", 
+              fontFamily: "Poppins, sans-serif",
+              borderRadius: "10px", 
+              padding: "10px 20px", 
+              cursor: "pointer",
+              border: "1px solid #83F3DF",
+              boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.25)",
+              transition: "all 0.2s ease-in-out",
+               }}
+                className="wl-button"  
+                onClick={handleSubmit}
+              >
+                Join Waitlist!
+              </Button>
+            </Grid>
+          </Grid>
+        </div>
+      </form>
+    </>
   );
 };
