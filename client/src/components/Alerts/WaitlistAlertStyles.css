@@ -1,0 +1,29 @@
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    z-index: 1000;
+  }
+  
+  .alert-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .alert-failure {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .slide-in {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .slide-out {
+    transform: translateX(100%);
+    opacity: 0;
+  }

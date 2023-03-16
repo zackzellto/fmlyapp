@@ -6,11 +6,14 @@ import Axios from "axios";
 import Grid from "@mui/material/Unstable_Grid2";
 import { validateEmail } from "../FormValidationChecker";
 import "./WaitlistSignup.css";
+import WaitlistAlert from "../../../components/Alerts/WaitlistAlert";
 
 
 export const WaitlistSignupForm = () => {
 
   const [email, setEmail] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
+
 
   const checkEmail = () => {
     if (validateEmail(email)) {
@@ -25,12 +28,14 @@ export const WaitlistSignupForm = () => {
       e.preventDefault();
       await Axios.post("http://localhost:8088/WaitlistSignup", { email }).then(
         (response) => {
-          console.log(response);
+          if (response.data === "Success") {
+            return <WaitlistAlert isSuccess={true} onClose={() => setShowAlert(false)} />;
+          } else {
+            return <WaitlistAlert isSuccess={false} onClose={() => setShowAlert(false)} />;
+          }
         }
       );
-    } else {
-      alert("Please enter a valid email address");
-    }
+    } 
   };
 
   return (
